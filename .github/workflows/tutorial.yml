@@ -1,7 +1,9 @@
+name: GitHub Actions Demo
+
+on: [push]
+
 jobs:
-  # "my_first_job"というジョブIDでジョブを定義
-  my_first_job:
-    name: My first job
-  # "my_second_job"というジョブIDでジョブを定義
-  my_second_job:
-    name: My second job
+  echo_hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world!!"
